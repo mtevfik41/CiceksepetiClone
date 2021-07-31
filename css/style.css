@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Top header-1 */
+
+.header-1 {
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.container {
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.header-1 .list {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.header-1 .list-item {
+  display: inline-flex;
+  color: #000;
+  text-decoration: underline;
+  margin-left: 30px;
+  float: right;
+  padding: 10px 0;
+}
+
+.header-1 ul li a {
+  color: #000;
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .header-1 {
+    display: none;
+  }
+}
+
+/* Top header-2 */
+
+.header-2 {
+  padding: 18px 0 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-2 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-2 .container .brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  height: 44px;
+  display: flex;
+  align-items: stretch;
+}
+
+.form-control {
+  padding: 0 85px 0 12px;
+  line-height: 44px;
+  border: 2px solid #edf1f2;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #fff;
+  outline: none;
+}
+
+.form-control::placeholder {
+  opacity: 0.5;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.btn-search {
+  background-color: #51b549;
+  color: #fff;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #edf1f2;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 0 12px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.25px;
+  cursor: pointer;
+}
+
+.header-2 .container .var-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-2 .container .var-logos .log a {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+}
+
+.header-2 .container .var-logos .log a:hover {
+  text-decoration: underline;
+}
+
+.logo-1,
+.logo-2,
+.logo-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.truck {
+  color: red;
+  margin-bottom: 5px;
+}
+
+.user {
+  color: orange;
+  margin-bottom: 5px;
+}
+
+.basket {
+  color: greenyellow;
+  margin-bottom: 5px;
+}
+
+.nav {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .header-2 {
+    min-width: 350px;
+    background-color: #083b73;
+  }
+  .header-2 .container .brand-logo {
+    display: none;
+  }
+  .header-2 .container {
+    width: 750px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-2 .container .input-search {
+    width: 100%;
+  }
+
+  .nav {
+    position: relative;
+    min-width: 350px;
+    background-color: #f5f5f5;
+    display: block;
+    padding: 0 10px;
+    background-color: #80aadb;
+  }
+
+  .nav .collect {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav .collect .list-item {
+    color: #000;
+    text-decoration: none;
+  }
+  .img-logo {
+    margin-top: 10px;
+  }
+  .nav ul li a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .form-control {
+    flex: 0 0 85%;
+  }
+  .btn-search {
+    flex: 1;
+  }
+  .header-2 .container .var-logos {
+    display: none;
+  }
+  .btn-search {
+    height: 44px;
+  }
+}
