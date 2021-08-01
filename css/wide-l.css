@@ -58,7 +58,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  margin: 2.5px 0;
 }
 
 .container .header-2-list-group .logos {
@@ -71,8 +70,8 @@ body {
   display: flex;
   position: relative;
   width: 600px;
-  margin-left: 90px;
-  margin-bottom: 5px;
+  margin-left: 120px;
+  margin-bottom: 7px;
 }
 
 .product-search-input {
@@ -100,17 +99,14 @@ body {
 
 .product-search-button {
   height: 44px;
+  width: 55px;
   position: absolute;
   right: 0;
   top: 0;
-  height: 44px;
-  width: 55px;
   text-align: center;
   background-color: #51b549;
-  padding: 10px 12px;
-  font-size: 16px;
   line-height: 1.42857143;
-  border-radius: 6px;
+  border-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   display: inline-block;
@@ -143,6 +139,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto 2rem auto 0;
+  text-decoration: none;
 }
 
 .truck p {
@@ -155,6 +152,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto 2rem auto 0;
+  text-decoration: none;
 }
 
 .user p {
@@ -167,6 +165,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto 0;
+  text-decoration: none;
 }
 
 .basket p {
@@ -187,3 +186,82 @@ body {
 }
 
 /* Categories */
+
+.navbar {
+  background-color: #185aa3;
+  height: 56px;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .container ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 56px;
+  justify-content: space-between;
+}
+.navbar .container ul li {
+  height: 56px;
+  border-right: 1px solid #7b99f1;
+}
+
+.navbar .container ul li:last-child {
+  border: none;
+}
+.navbar .container ul li:hover,
+.navbar .container ul li:hover > * {
+  background-color: #fff;
+  color: #185aa3;
+  transform: scale(1.1);
+}
+.navbar .container ul li a {
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0 15px;
+  position: relative;
+}
+.navbar .container ul li a span {
+  font-size: 1.5rem;
+}
+
+.first {
+  padding: 0 15px 0 0 !important;
+}
+
+.double {
+  display: flex;
+  flex-direction: column;
+  text-align: left !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+}
+
+.sub {
+  text-decoration: none;
+  font-size: 1.2rem !important;
+  font-weight: 300;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.double-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-2 {
+  text-decoration: none;
+  font-weight: 300;
+  text-align: left;
+  align-self: center;
+}
