@@ -3,6 +3,7 @@
 # Ciceksepeti Clone
 
 - Still in progress. I'll do the optimization later.
+- (10.08.2021) delayed, i will change my tech stack to built this project.
 
 Clone project of <a href="https://www.ciceksepeti.com/">Ciceksepeti</a>.
 
